@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Description: prints all single digit numbers of base 10
- * Return: 0
+ * main - Entry point
+ * Return:0
  */
 int main(void)
 {
@@ -12,7 +11,6 @@ int main(void)
 	{
 		putchar (i + '0');
 	}
-
 	for (y = 'a'; y <= 'f'; y++)
 	{
 		putchar (y);
