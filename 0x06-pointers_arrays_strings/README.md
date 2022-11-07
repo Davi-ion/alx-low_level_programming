@@ -1,2 +1,1 @@
-0x00. C - Hello, World
-0x06-pointers_arrays_strings
+My read me file for 0x06-pointers_arrays_strings

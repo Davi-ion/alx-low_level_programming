@@ -1,18 +1,23 @@
 #include "main.h"
+
 /**
- * _strcmp - string to compare
- * @s1: first string
- * @s2: second string
- *
- * Return: value of string
+ * _strcmp -  function that compares two strings.
+ * @s1: primera cadena.
+ * @s2: segunda cadena.
+ * Return: 0.
  */
+
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int res = 0;
 
-	while (s1[i] - s2[i] == 0 && s1[i] != '\0')
+	while (*s1 == *s2 && *s1 != '\0')
 	{
-		i++;
+		s1++;
+		s2++;
 	}
-	return (s1[i] - s2[i]);
+	if (s1 != s2)
+		res = *s1 - *s2;
+
+	return (res);
 }
